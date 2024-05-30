@@ -14,8 +14,8 @@ import Link from "next/link";
 export const Header = () => {
   return (
     <header className="relative flex justify-center">
-      <div className="z-1 flex w-full items-center justify-between gap-2 px-2 sm:px-8">
-        <div className="flex items-center justify-start gap-1 max-sm:hidden">
+      <div className="z-1 flex w-full items-center gap-2 px-2 sm:px-8">
+        <div className="flex flex-1 items-center justify-start gap-1 max-sm:hidden">
           <Button variant="ghost" size="icon" asChild>
             <a
               href="https://github.com/elitenoire/trylingo"
@@ -38,7 +38,7 @@ export const Header = () => {
             Lingo
           </span>
         </Link>
-        <div className="flex items-center justify-end">
+        <div className="flex flex-1 items-center justify-end">
           <ClerkLoaded>
             <SignedIn>
               <UserButton />
